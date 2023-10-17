@@ -1,10 +1,10 @@
-import React from "react";
+import React  from "react";
 import { Link } from "react-router-dom";
 import logoImageUrl from "../../img/logo.png";
 
 export const Navbar = () => {
     return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
       <div className="container">
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
           aria-controls="navbarTogglerDemo03"
@@ -12,36 +12,28 @@ export const Navbar = () => {
           aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
         </button>
-        <Link className="nav-brand" to="/">
+        <a className="nav-brand" href="/">
           <img
-            className="d-inline-block "
+            className="d-inline-block logo "
             src={logoImageUrl}
             alt="Logo"
-            width="150"
-            height="150"
+            width="120"
+            height="120"
           />
-        </Link>
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul className="navbar-nav ms-auto me-auto mb-2 mb-lg-0  h4 gap-4">
+        </a>
+        <div className="collapse navbar-collapse" id="navbarToggler">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0  h4 gap-4">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Inicio
-              </Link>
+              <a className="nav-link" href="#Inicio">Inicio</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/shop">
-                Nosotros
-              </Link>
+              <a className="nav-link" href="#Nosotros">Nosotros</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/servicios">
-                Servicios
-              </Link>
+              <a className="nav-link" href="#Servicios">Servicios</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
-                Contacto
-              </Link>
+            <a className="nav-link" href="#Contacto">Contacto</a>
             </li>
           </ul>
         </div>

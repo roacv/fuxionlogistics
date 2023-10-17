@@ -1,31 +1,37 @@
 import React from "react";
+import { useRef } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ScrollToTop from "react-scroll-to-top";
 import { Navbar } from "./navbar";
+import { Header } from "./header";
+import { Footer } from "./footer";
 //include images into your bundle
-//import rigoImage from "../../img/rigo-baby.jpg";
+import banner1 from "../../img/bg1.jpg";
+import { Nosotros } from "./nosotros";
 
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
-			<BrowserRouter>
-			<Navbar/>
-			<h1 className="text-center mt-5">Inicio con Banner</h1>
-			<h1 className="text-center mt-5">Nosotros</h1>
-			<h1 className="text-center mt-5">Servicios</h1>
-			<h1 className="text-center mt-5">Formulario de contacto</h1>
-
-			{/* <p>
-				<img src={rigoImage} />
-			</p> */}
-			{/* <a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a> */}
-			<p>
-				by{" "}
-				<a href="http://www.iitec.cl">iitec</a>
-			</p>
-			</BrowserRouter>
+		<div>
+			<ScrollToTop/>
+			<Header/>
+			<Navbar/>	
+			<div className="body">	
+				<div className="section section1" id="Inicio">
+					<img src={banner1} />
+				</div>
+				<div className="section section2 mt-5" id="Nosotros">
+					{/* <h2 className="text-center mt-5">NOSOTROS</h2> */}
+					<Nosotros/>
+				</div>		
+				<div className="section section3" id="Servicios">
+					<h2 className="text-center mt-5">Servicios</h2>
+				</div>
+				<div className="section section4" id="Contacto">
+					<h2 className="text-center mt-5">Formulario de contacto</h2>
+				</div>
+			</div>
+			<Footer/>
 		</div>
 	);
 };
