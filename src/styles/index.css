@@ -13,6 +13,7 @@
         Verde Oscuro : #014005
         Verde claro : #02730A
         Verde claro-r : #e5f1e8
+        Fonfo claro : #cbecd9
         Beige : #BDA773
         café : #6F4929
         café-l : #916131
@@ -23,6 +24,7 @@
     --bg-color-d: #014005;
     --bg-color-l: #02730A;
     --bg-color-lr: #CBECD9;
+    --bg-color-ls: #c8dc9c;
     --color-text: #6F4929;
     --color-text-r : #BDA773;
     --color-text-rl : #e5f1e8;
@@ -75,10 +77,51 @@
 .logo {
     margin-top: 1rem;
 }
-#Inicio img{
-    height: 600px;
+#Inicio {
+    background-color: var(--bg-color-d);
+    opacity: .8;
+    height: 45rem;
+    overflow:hidden;
+}
+#carousel img{
+    position: relative;
+    object-fit: cover;
+    /* width: 100%;
+    height: auto; */
+    
+}
+#Servicios {
+    background-color: var(--bg-color-ls);
+}
+.card45 {
+    width: 100rem;
 }
 .body h2{
-    color: var(--color-text);
+    color: var(--bg-color-d);
     font-family: 'Francois One', sans-serif;
+}
+.iconservicio {
+    font-size: 6rem;
+    color: var(--color-text-r)
+}
+
+.baseBlock {
+	margin: 0px 0px 35px 0px;
+	padding: 0 0 15px 0px;
+	border-radius: 5px;
+	overflow: hidden;
+	min-height: 390px;
+	background: #fff;
+	-moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	-o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.baseBlock:hover {
+	-webkit-transform: translate(0, -8px);
+	-moz-transform: translate(0, -8px);
+	-ms-transform: translate(0, -8px);
+	-o-transform: translate(0, -8px);
+	transform: translate(0, -8px);
+	box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
 }
