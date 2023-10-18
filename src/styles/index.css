@@ -27,10 +27,17 @@
     --bg-color-ls: #c8dc9c;
     --color-text: #6F4929;
     --color-text-r : #BDA773;
-    --color-text-rl : #e5f1e8;
-    
-  }
-
+    --color-text-rl : #e5f1e8; 
+  }  
+h1,h2,h3,h4,h5{
+    font-family: 'Francois One', sans-serif;
+}
+p{
+    font-family: 'Merriweather', serif;
+}
+.btn-primary {
+    background-color: var(--bg-color-l)!important;
+}
 .header {
     padding-left: 60%;
     height: 2rem;
@@ -41,9 +48,6 @@
 .header a{
     color: var(--color-text-r);
 }
-/* .body{
-    height: 100%;
-} */
 
 .footer {
     padding-left: 50%;
@@ -62,11 +66,10 @@
     height: 7rem;
     padding-left: 10%;
     /* background-color: var(--bg-color-lr) !important; */
-    background: linear-gradient(90deg, rgba(255,255,255,1) 26%, rgba(2,115,10,1) 88%, rgba(1,64,5,1) 100%) !important; 
+    background: linear-gradient(90deg, rgba(255,255,255,1) 26%, rgba(2,115,10,1) 88%, rgba(1,64,5,1) 100%) !important;
 }
 .navbar-nav {
     margin-left: 40%;
-    
 }
 .nav-link{
     color: #1B365C;
@@ -78,27 +81,53 @@
     margin-top: 1rem;
 }
 #Inicio {
-    background-color: var(--bg-color-d);
-    opacity: .8;
+    /* background-color: var(--bg-color-d); */
+    /* opacity: 1;*/
     height: 45rem;
     overflow:hidden;
 }
-#carousel img{
+ /* #carousel img{
     position: relative;
     object-fit: cover;
     /* width: 100%;
-    height: auto; */
-    
+    height: auto; */    
+/*} */
+#carousel p{
+    font-size: larger;
+}
+#Nosotros {
+    position: relative;
+    padding: 15px;
+    border-top: 100px solid transparent;
+    margin-top: -10px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
 }
 #Servicios {
     background-color: var(--bg-color-ls);
+    position: relative;
+    padding: 15px;
+    border-top: 100px solid transparent;
+    margin-top: -10px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+#Contacto {
+    position: relative;
+    padding: 15px;
+    border-top: 100px solid transparent;
+    margin-top: -10px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
 }
 .card45 {
     width: 100rem;
 }
 .body h2{
     color: var(--bg-color-d);
-    font-family: 'Francois One', sans-serif;
 }
 .iconservicio {
     font-size: 6rem;
@@ -125,3 +154,13 @@
 	transform: translate(0, -8px);
 	box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
 }
+@media only screen and (max-width: 992px) {
+    .navbar-collapse {
+        /* background-color: var(--bg-color-l); */
+        background-color: color-mix(in srgb,var(--bg-color-ls),#0000 10%);
+        margin-top: -30px;
+    }
+    #Inicio {
+    height: 15rem;
+    }
+  }

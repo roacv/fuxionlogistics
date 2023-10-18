@@ -4,10 +4,10 @@ import logoImageUrl from "../../img/logo.png";
 
 export const Navbar = () => {
     return (
-    <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar sticky-top navbar-expand-lg">
       <div className="container">
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03"
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler"
           aria-expanded="false"
           aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
@@ -36,11 +36,6 @@ export const Navbar = () => {
             <a className="nav-link" href="#Contacto">Contacto</a>
             </li>
           </ul>
-        </div>
-        <div className="nav-item ms-5 mx-2 ms-lg-0">
-              {/* <Link className="nav-link" to=""> */}
-              {/* <CarShopping/> */}
-              {/* </Link> */}
         </div>
       </div>
     </nav>

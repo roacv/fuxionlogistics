@@ -1,17 +1,15 @@
 import React from "react";
-import { useRef } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
 import { Navbar } from "./navbar";
 import { Header } from "./header";
 import { Footer } from "./footer";
 //include images into your bundle
-import banner1 from "../../img/bg1.jpg";
 import { Nosotros } from "./nosotros";
 import { Banner } from "./banner";
 import { Mision } from "./mision";
 import { Vision } from "./vision";
 import { Servicios } from "./servicios";
+import { Formulario } from "./formulario";
 
 //create your first component
 const Home = () => {
@@ -25,7 +23,7 @@ const Home = () => {
 					<Banner/>
 					{/* <img className="img-fluid" src={banner1} /> */}
 				</div>
-				<div className="section section2 mt-5 pb-3 d-flex flex-column justify-content-center" id="Nosotros">
+				<div className="section section2 d-flex flex-column justify-content-center" id="Nosotros">
 					{/* <h2 className="text-center mt-5">NOSOTROS</h2> */}
 					<Nosotros/>
 					<div className="mt-5 d-flex justify-content-center">
@@ -33,12 +31,14 @@ const Home = () => {
 						<Vision/>
 					</div>
 				</div>		
-				<div className="section section3 pb-5 mt-5" id="Servicios">
-					<h2 className="text-center mt-2 pt-5 mb-5">Servicios</h2>
+				<div className="section section3" id="Servicios">
+					<h2 className="text-center pt-3 mb-5">Servicios</h2>
 					<Servicios/>
 				</div>
-				<div className="section section4" id="Contacto">
-					<h2 className="text-center mt-5">Formulario de contacto</h2>
+				<div className="section section4 pb-5 mb-5" id="Contacto">
+					<h2 className="text-center mt-1">Formulario de contacto</h2>
+					<h4 className="text-center mb-3"> Nos pondremos en contacto lo más pronto posible, detalla lo que requieres para entregarte el mejor servicio</h4>
+					<Formulario/>
 				</div>
 			</div>
 			<Footer/>
