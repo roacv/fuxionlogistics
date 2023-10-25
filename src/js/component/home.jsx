@@ -25,20 +25,24 @@ const Home = () => {
 				</div>
 				<div className="section section2 d-flex flex-column justify-content-center" id="Nosotros">
 					{/* <h2 className="text-center mt-5">NOSOTROS</h2> */}
+					<hr class="ms-5 me-5"></hr>
 					<Nosotros/>
 					<div className="mt-5 d-flex justify-content-center">
 						<Mision/>
 						<Vision/>
 					</div>
-				</div>		
+				</div>	
 				<div className="section section3" id="Servicios">
+					<hr class="ms-5 me-5"></hr>
 					<h2 className="text-center pt-3 mb-5">Servicios</h2>
 					<Servicios/>
 				</div>
 				<div className="section section4 pb-5 mb-5" id="Contacto">
-					<h2 className="text-center mt-1">Formulario de contacto</h2>
-					<h4 className="text-center mb-3"> Nos pondremos en contacto lo más pronto posible, detalla lo que requieres para entregarte el mejor servicio</h4>
+					<hr class="ms-5 me-5"></hr>
+					<h2 className="text-center mt-1">Contáctenos!!!</h2>
+					<h4 className="text-center mb-3"> Detalla lo que requieres para entregarte el mejor servicio, nos pondremos en contacto lo más pronto posible</h4>
 					<Formulario/>
+					<hr class="ms-5 me-5"></hr>
 				</div>
 			</div>
 			<Footer/>

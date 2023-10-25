@@ -35,14 +35,19 @@ h1,h2,h3,h4,h5{
 p{
     font-family: 'Merriweather', serif;
 }
+hr{
+    color: #007200;
+}
 .btn-primary {
     background-color: var(--bg-color-l)!important;
 }
 .header {
     padding-left: 60%;
     height: 2rem;
-    background-color: var(--bg-color-d);
+    /* background-color: var(--bg-color-d); */
+    background-color: #007200;
     color:var(--color-text-r);
+
     font-size: 90%
 }
 .header a{
@@ -53,6 +58,7 @@ p{
     padding-left: 50%;
     height: 5rem;
     background-color: var(--bg-color-d);
+    background-color: #007200;
     color:var(--color-text-r);
     font-size: 90%
 }
@@ -66,13 +72,16 @@ p{
     height: 7rem;
     padding-left: 10%;
     /* background-color: var(--bg-color-lr) !important; */
-    background: linear-gradient(90deg, rgba(255,255,255,1) 26%, rgba(2,115,10,1) 88%, rgba(1,64,5,1) 100%) !important;
+    /* background: linear-gradient(90deg, rgba(255,255,255,1) 26%, rgba(2,115,10,1) 88%, rgba(1,64,5,1) 100%) !important; */
+    background-color: var(--bg-color-d);
+
 }
 .navbar-nav {
     margin-left: 40%;
 }
 .nav-link{
     color: #1B365C;
+    color: #ffff;
 }
 .nav-link:hover{
     color: #49b7be;
@@ -104,8 +113,15 @@ p{
     -moz-background-clip: padding;
     background-clip: padding-box;
 }
+#Nosotros .card{
+    border-radius: 25px;
+}
+.card-header-nosotros {
+    background-color: var(--bg-color-d);
+    color: var(--color-text-rl) !important;
+}
 #Servicios {
-    background-color: var(--bg-color-ls);
+    /* background-color: var(--bg-color-ls); */
     position: relative;
     padding: 15px;
     border-top: 100px solid transparent;
@@ -114,6 +130,10 @@ p{
     -moz-background-clip: padding;
     background-clip: padding-box;
 }
+#Servicios .card-footer{
+    background-color: var(--bg-color-d);
+}
+
 #Contacto {
     position: relative;
     padding: 15px;
