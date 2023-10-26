@@ -21,9 +21,9 @@
 
 */
 :root {
-    --bg-color-d: #014005;
+    --bg-color-d: #000000;
     --bg-color-l: #02730A;
-    --bg-color-lr: #CBECD9;
+    --bg-color-r: #7FD733;
     --bg-color-ls: #c8dc9c;
     --color-text: #6F4929;
     --color-text-r : #BDA773;
@@ -39,15 +39,16 @@ hr{
     color: #007200;
 }
 .btn-primary {
-    background-color: var(--bg-color-l)!important;
+    background-color: var(--bg-color-r)!important;
 }
 .header {
     padding-left: 60%;
     height: 2rem;
-    /* background-color: var(--bg-color-d); */
-    background-color: #007200;
+    /* background-color: var(--bg-color-l); */
     color:var(--color-text-r);
-
+    /* background: linear-gradient(90deg, rgba(220,220,220,1) 27%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%); */
+    background: linear-gradient(90deg, rgba(220,220,220,1) 0%, rgba(0,0,0,1) 69%, rgba(0,0,0,1) 100%);
+    /* background-color: #505050; */
     font-size: 90%
 }
 .header a{
@@ -58,7 +59,8 @@ hr{
     padding-left: 50%;
     height: 5rem;
     background-color: var(--bg-color-d);
-    background-color: #007200;
+    /* background-color: #007200; */
+    /* background: linear-gradient(90deg, rgba(220,220,220,1) 0%, rgba(0,0,0,1) 69%, rgba(0,0,0,1) 100%); */
     color:var(--color-text-r);
     font-size: 90%
 }
@@ -80,7 +82,6 @@ hr{
     margin-left: 40%;
 }
 .nav-link{
-    color: #1B365C;
     color: #ffff;
 }
 .nav-link:hover{
@@ -117,11 +118,12 @@ hr{
     border-radius: 25px;
 }
 .card-header-nosotros {
-    background-color: var(--bg-color-d);
+    background-color: var(--bg-color-r);
     color: var(--color-text-rl) !important;
 }
 #Servicios {
     /* background-color: var(--bg-color-ls); */
+    
     position: relative;
     padding: 15px;
     border-top: 100px solid transparent;
@@ -131,7 +133,7 @@ hr{
     background-clip: padding-box;
 }
 #Servicios .card-footer{
-    background-color: var(--bg-color-d);
+    background-color: var(--bg-color-r);
 }
 
 #Contacto {
@@ -174,6 +176,7 @@ hr{
 	transform: translate(0, -8px);
 	box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
 }
+
 @media only screen and (max-width: 992px) {
     .navbar-collapse {
         /* background-color: var(--bg-color-l); */
