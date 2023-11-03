@@ -1,7 +1,5 @@
 import React from "react";
-import { BsTelephoneInbound,BsEnvelopeAt,BsWhatsapp } from "react-icons/bs";
 import { FaEye  } from "react-icons/fa6";
-import img from "../../img/vision.png";
 
 export const Vision = () => {
     return (

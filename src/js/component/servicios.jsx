@@ -3,7 +3,6 @@ import { BsFillAirplaneEnginesFill } from "react-icons/bs";
 import { GiCargoShip, GiPapers } from "react-icons/gi";
 import { FaTruckPlane  } from "react-icons/fa6";
 import { MdAssuredWorkload } from "react-icons/md";
-import img from "../../img/mision.png";
 
 export const Servicios = () => {
     return (
