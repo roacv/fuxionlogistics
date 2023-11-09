@@ -18,7 +18,7 @@ export const Navbar = () => {
             src={logoImageUrl}
             alt="Logo"
             width="270"
-            height="170"
+            height="150"
           />
         </a>
         <div className="collapse navbar-collapse" id="navbarToggler">

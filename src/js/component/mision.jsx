@@ -1,5 +1,5 @@
 import React from "react";
-import { GiBullseye } from "react-icons/gi";
+import { GiBullseye } from "@react-icons/all-files/gi/GiBullseye";
 
 export const Mision = () => {
     return (

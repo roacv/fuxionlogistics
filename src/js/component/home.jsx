@@ -10,7 +10,7 @@ import { Mision } from "./mision";
 import { Vision } from "./vision";
 import { Servicios } from "./servicios";
 import { Formulario } from "./formulario";
-import imgserv from "../../img/bg_servicios.png"
+import {FaWhatsapp} from "@react-icons/all-files/fa/FaWhatsapp"
 
 //create your first component
 const Home = () => {
@@ -19,6 +19,7 @@ const Home = () => {
 			<ScrollToTop/>
 			<Header/>
 			<Navbar/>	
+			<a href="https://wa.me/+56946325818?text=Hola%20quisiera%20consultar%20los%20servicios%20para" class="whatsapp" target="_blank"> <FaWhatsapp/></a>
 			<div className="body">	
 				<div className="section section1 d-flex justify-content-center" id="Inicio">
 					<Banner/>

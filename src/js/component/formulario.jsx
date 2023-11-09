@@ -1,5 +1,4 @@
 import React from "react";
-import { BsTelephoneInbound,BsEnvelopeAt,BsWhatsapp } from "react-icons/bs";
 
 export const Formulario = () => {
     return (

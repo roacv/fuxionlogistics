@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEye  } from "react-icons/fa6";
+import { FaEye  } from "@react-icons/all-files/fa/FaEye";
 
 export const Vision = () => {
     return (

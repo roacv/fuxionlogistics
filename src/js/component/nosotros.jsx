@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUsers } from "react-icons/fa6";
+import { FaUsers } from "@react-icons/all-files/fa/FaUsers";
 
 export const Nosotros = () => {
     return (
