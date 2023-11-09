@@ -17,8 +17,8 @@ export const Navbar = () => {
             className="d-inline-block logo "
             src={logoImageUrl}
             alt="Logo"
-            width="120"
-            height="120"
+            width="270"
+            height="170"
           />
         </a>
         <div className="collapse navbar-collapse" id="navbarToggler">
