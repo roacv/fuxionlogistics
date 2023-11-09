@@ -8,8 +8,7 @@ export const Vision = () => {
         <p className="iconservicio text-center"><FaEye/></p>
         <h2 className="card-header card-header-nosotros text-center">VISIÓN</h2>
         <h5 className="card-title"></h5>
-        <p className="card-text">En Fuxion Logistics Spa, nos enorgullece ser un líder en la industria de la logística y el transporte Internacional. Fundada en 2019, nuestra empresa ha crecido a lo largo de los años, respaldada por una dedicación constante a la excelencia y una pasión por la logística Internacional efectiva. Contamos con profesionales con más de diez años de experiencia.
-Garantizamos profesionalismo y rapidez en toda la operativa, resguardando los intereses de nuestros clientes. Conocemos los mercados mundiales, lo que nos permite asesorar con información en tiempo real.</p>
+        <p className="card-text">Ser reconocidos como el líder en soluciones de logística internacional en Chile, brindando servicios de freight forwarding de clase mundial. Nuestra visión es ser la elección preferida de nuestros clientes, ofreciendo eficiencia, confiabilidad y una experiencia excepcional en la gestión de sus cargas a nivel global. Nos esforzamos por superar las expectativas en cada envío y contribuir al crecimiento y éxito de nuestros clientes</p>
       </div>
     </div>
   );
